@@ -7,10 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TUIMusement", "TUIMusement\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TUIMusement.Tests", "TUIMusement.Tests\TUIMusement.Tests.csproj", "{70F66ED7-9733-45B2-875D-93FF21E74E64}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BDC21A48-42DA-4EB3-B873-8F3E07BE6334}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E98C72BF-9F3E-4C22-A126-2EF8AED1EED4}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
-		README.md = README.md
 	EndProjectSection
 EndProject
 Global
