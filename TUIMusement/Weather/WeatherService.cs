@@ -14,7 +14,7 @@ namespace TUIMusement.Weather
         private const string WeatherApiKey = "53a1bc275a5045fdbf784446220208";
         private const int WeatherDays = 2;
 
-        private IHttpClientFactory HttpFactory { get; set; }        
+        private readonly IHttpClientFactory HttpFactory;       
 
         public WeatherService(IHttpClientFactory httpFactory)
         {
@@ -31,7 +31,7 @@ namespace TUIMusement.Weather
                 if (response.IsSuccessStatusCode)
                 {
                     var weather = await response.Content.ReadFromJsonAsync<WeatherForecast>();
-                    Console.WriteLine($"Processed city {city.Code} | {weather?.Forecast?.ForecastDay?.FirstOrDefault().Day?.Condition?.Text} - {weather?.Forecast?.ForecastDay?.LastOrDefault().Day?.Condition?.Text}");
+                    Console.WriteLine($"Processed city {city.Name} | {weather?.Forecast?.ForecastDay?.FirstOrDefault().Day?.Condition?.Text} - {weather?.Forecast?.ForecastDay?.LastOrDefault().Day?.Condition?.Text}");
                 }
                 else
                 {

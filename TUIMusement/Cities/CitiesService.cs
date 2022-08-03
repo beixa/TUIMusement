@@ -10,7 +10,7 @@ namespace TUIMusement.Cities
     {
         private const string MusementCitiesUrl = "https://sandbox.musement.com/api/v3/cities";
 
-        private IHttpClientFactory HttpFactory { get; set; }        
+        private readonly IHttpClientFactory HttpFactory;       
 
         public CitiesService(IHttpClientFactory httpFactory)
         {
