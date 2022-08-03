@@ -5,7 +5,12 @@ VisualStudioVersion = 16.0.32630.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TUIMusement", "TUIMusement\TUIMusement.csproj", "{0841640C-2628-4245-A36C-F1A060674476}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TUIMusement.Tests", "TUIMusement.Tests\TUIMusement.Tests.csproj", "{70F66ED7-9733-45B2-875D-93FF21E74E64}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TUIMusement.Tests", "TUIMusement.Tests\TUIMusement.Tests.csproj", "{70F66ED7-9733-45B2-875D-93FF21E74E64}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BDC21A48-42DA-4EB3-B873-8F3E07BE6334}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

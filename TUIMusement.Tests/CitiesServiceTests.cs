@@ -33,8 +33,8 @@ namespace TUIMusement.Tests
         public async Task GetCities_ValidResponseFromClient_AsksForCitiesToClient()
         {
             //Arrange
-            var mockResponse = new HttpResponseMessage() { StatusCode = HttpStatusCode.OK, Content = new StringContent("[{\"id\":57,\"code\":\"amsterdam\",\"latitude\":52.374,\"longitude\":4.9}]") };
-            var expectedResponse = new List<City> { new City(57, "amsterdam", (float)52.374, (float)4.9) };
+            var mockResponse = new HttpResponseMessage() { StatusCode = HttpStatusCode.OK, Content = new StringContent("[{\"id\":57,\"name\":\"Amsterdam\",\"latitude\":52.374,\"longitude\":4.9}]") };
+            var expectedResponse = new List<City> { new City(57, "Amsterdam", (float)52.374, (float)4.9) };
 
             HttpFactory.CreateClient().Returns(Client);
 
